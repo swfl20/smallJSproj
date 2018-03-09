@@ -1,0 +1,34 @@
+h1{ 
+color:#FFFFF0;
+background-color:#000000;
+text-align:center;
+border:10px ridge #F0E68C;
+padding:20px;
+margin:30px;
+margin-bottom:55px;
+}
+h2{ 
+color:#000080;
+background-color:#F0E68C;
+text-align:center;
+border:5px inset #FF7F50;
+}
+h3{ 
+color:#FF704D;
+padding:20px;
+background-color:#F0E68C;
+text-align:center;
+border:5px inset #FF7F50;
+border-width:15px;
+margin:10px;
+}
+h4{ 
+color:#00BFFF;
+text-align:center;
+}
+h5{
+color:#191970;
+text-align:center;
+font-size:large;
+text-decoration:underline;
+}
