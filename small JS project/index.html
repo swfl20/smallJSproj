@@ -1,50 +1,51 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <html>
-<head>
+	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
 		<title>My Mini Guessing Game</title>   
 		<script type="text/javascript" src="myscript.js"></script>   
 		<link rel="stylesheet" type="text/css" href="mystyle.css">
-</head>
+	</head>
 
-<!--initialization when loading the webpage-->
-<body onload="initialization();" >
+	<!--initialization when loading the webpage-->
+	<body onload="initialization();" >
 
-	<h1>Welcome to the guessing game!</h1>
-	<hr />	
-	
-<!--Display date-->
-	<h2> Today is:
-		<script type="text/javascript">
-			document.write(getFullDate());
-		</script>
-	</h2>
-	<hr />
-	
-<!--game form starts here-->
-	<form name="gameForm;" action="">
+		<h1>Welcome to the guessing game!</h1>
+		<hr />	
 
-		<h3>Test your abilities...Guess a number between 1 and 1000 now!<br><br><br>
-       
-			Name: <input name="name" id="name" type="text" onchange='checkName( this.value );'> &nbsp; &nbsp; &nbsp;
-			Number: <input name="number" id="number" type="text" onchange='checkNumber( this.value );'><br><br><br>           
-		
-			<input type="button" value="Submit!" onclick="updateGuesses();">
-		</h3>
-		
-		<h4>Number of guesses so far:<span id="counter">0</span></h4>
-		<h5>Your abilities will be evaluated here when you win</h5>
-		<h4><span id="show"> </span></h4>
+		<!--Display date-->
+		<h2> Today is:
+			<script type="text/javascript">
+				document.write(getFullDate());
+			</script>
+		</h2>
 		<hr />
-<!-- image taken from http://www.google.co.uk/imgres?q=magic&hl=en&safe=off&biw=1366&bih=569&gbv=2&tbm=isch&tbnid=6sYSk5w3XlU7NM:&imgrefurl=http://kingsfleetps.onesuffolk.net/blog/ksa-magic-show-ks1/&docid=y8ZEe2WJ-1oQbM&imgurl=http://kingsfleetps.onesuffolk.net/assets/Magic.jpg&w=304&h=355&ei=z1XnTsqjLM-38QPvrcmRCg&zoom=1&iact=rc&dur=461&sig=105833894399140751994&page=1&tbnh=163&tbnw=140&start=0&ndsp=12&ved=1t:429,r:3,s:0&tx=70&ty=95-->
-		<h3><img src="images\image.jpg" alt="guess"><br>
-		    <input type="reset" value="Reset" onclick="location.reload()">
-		</h3>
-   
-	</form>
-	
-<!--end of game form-->
-</body>
+
+		<!--game form starts here-->
+		<form name="gameForm;" action="">
+
+			<h3>Test your abilities...Guess a number between 1 and 1000 now!<br />
+
+				Name: <input name="name" id="name" type="text" onchange='checkName( this.value );'> &nbsp;
+				Number: <input name="number" id="number" type="text" onchange='checkNumber( this.value );'><br />           
+
+				<input type="button" value="Submit!" onclick="updateGuesses();">
+			</h3>
+
+			<h4>Number of guesses so far:<span id="counter">0</span></h4>
+			<h5>Your abilities will be evaluated here when you win</h5>
+			<h4><span id="show"> </span></h4>
+			<hr />
+
+			<!-- image taken from http://www.google.co.uk/imgres?q=magic&hl=en&safe=off&biw=1366&bih=569&gbv=2&tbm=isch&tbnid=6sYSk5w3XlU7NM:&imgrefurl=http://kingsfleetps.onesuffolk.net/blog/ksa-magic-show-ks1/&docid=y8ZEe2WJ-1oQbM&imgurl=http://kingsfleetps.onesuffolk.net/assets/Magic.jpg&w=304&h=355&ei=z1XnTsqjLM-38QPvrcmRCg&zoom=1&iact=rc&dur=461&sig=105833894399140751994&page=1&tbnh=163&tbnw=140&start=0&ndsp=12&ved=1t:429,r:3,s:0&tx=70&ty=95-->
+			<h3><img src="images\image.jpg" alt="guess"><br />
+			    <input type="reset" value="Reset" onclick="location.reload();">
+			</h3>
+
+		</form>
+
+		<!--end of game form-->
+	</body>
 </html>
